@@ -1,0 +1,132 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import"./fonts/fontc/stylesheet.css";
+
+body{ font-family: 'Gilroy', sans-serif ;
+font-weight: 500;
+}
+
+
+
+.conteiner {
+    max-width: 1750px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.button {
+    position: relative;
+
+
+    color: #114455;
+    font-size: 20px;
+    font-weight: 800;
+
+    border: 1px solid #114455;
+    border-radius: 2px;
+    padding: 10px 24px;
+    display: inline-block;
+    padding-right: 72px;
+
+    transition: color 0.15s ease-in,  background-color 0.15s;
+}
+.button:active{
+    top :2px;
+}
+
+.button:hover, .button:focus{
+    background-color: #114455;
+    color: azure;
+}
+.button:hover::after{
+    background-image: url("./../img/icons/Arrow\ Right\ white.svg");
+
+}
+
+.button-big{
+    padding:14px 32px ;
+    padding-right: 80px;
+
+}
+.button-dark{
+    background-color: #114455;
+    color: white;
+
+}
+.button-dark:hover, .button-dark:focus{
+    background-color: black;
+}
+.button-dark::after{
+ background-image: url("./../img/icons/Arrow\ Right\ white.svg");   
+}
+
+.button::after{
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-image:url("./../img/icons/Arrow\ Right\ Black.svg") ;
+    background-repeat: no-repeat;
+    background-position:center ;
+
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* HEADER */
+ 
+.header {
+    min-height:100vh ;
+    background-color: #c1cdf2;
+    background-image: url("./../img/headr/Mask\ group.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.header-top {
+    padding: 44px 0;
+    margin-bottom: 126px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    column-gap: 118px;
+}
+
+.link {
+    color: #114455;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* header-content */
+
+.header--content {
+    max-width: 1060px;
+}
+
+.header--title {
+    max-width: 734px;
+    font-weight: 800;
+    color:#114455 ;
+    margin-bottom: 48px;
+    font-size: 80px;
+}
+.header-text{
+    font-size:34px ;
+    color: #1f1f1f;
+    margin-bottom: 72px;
+}
+.header--btn {
+}
+
+.button {
+}
+
